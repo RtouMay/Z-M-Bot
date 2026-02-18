@@ -99,3 +99,15 @@ python bot.py
 ```bash
 pytest -q
 ```
+
+---
+
+## استقرار ۲۴/۷ روی سرور رایگان
+
+برای اجرای دائمی روی Oracle Cloud Always Free (بدون خواب رفتن سرویس) از این راهنما استفاده کن:
+
+- `deploy_oracle_free.md`
+
+فایل سرویس systemd آماده هم داخل پروژه قرار دارد:
+
+- `deploy/zmbot.service`
