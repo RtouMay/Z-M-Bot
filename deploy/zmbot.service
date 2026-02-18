@@ -1,0 +1,16 @@
+[Unit]
+Description=Z-M-Bot Telegram Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/z-m-bot
+EnvironmentFile=/opt/z-m-bot/.env
+ExecStart=/opt/z-m-bot/.venv/bin/python /opt/z-m-bot/bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -22,7 +22,13 @@ pip install -r requirements.txt
 
 ## 2) تنظیمات
 
-یک فایل `.env` در کنار `bot.py` بساز:
+یک فایل `.env` در کنار `bot.py` بساز (یا از نمونه کپی کن):
+
+```bash
+cp .env.example .env
+```
+
+سپس مقدارها را داخل `.env` تنظیم کن:
 
 ```env
 BOT_TOKEN=توکن_ربات_شما
@@ -93,3 +99,15 @@ python bot.py
 ```bash
 pytest -q
 ```
+
+---
+
+## استقرار ۲۴/۷ روی سرور رایگان
+
+برای اجرای دائمی روی Oracle Cloud Always Free (بدون خواب رفتن سرویس) از این راهنما استفاده کن:
+
+- `deploy_oracle_free.md`
+
+فایل سرویس systemd آماده هم داخل پروژه قرار دارد:
+
+- `deploy/zmbot.service`
